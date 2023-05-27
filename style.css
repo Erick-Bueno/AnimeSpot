@@ -188,6 +188,7 @@ main {
     background-color: rgb(55, 155, 208);
     display: flex;
     justify-content: center;
+    align-items: center;
     box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
     -webkit-box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
@@ -209,13 +210,7 @@ main {
     margin-left: 1rem;
     
 }
-.container-secfotter1{
-  padding:50px;
-  border-right: 4px solid white;
-  width: 350px;
-  
-    
-}
+
 .contacts{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -237,7 +232,16 @@ main {
     color: white;
     margin-left: 0.625rem;
 }
+.container-secfotter1{
+ width:  298.7px;
+  border-right: 1px solid white;
+  padding: 2rem;
+ 
+
+    
+}
 .container-secfotter2{
-  padding:50px;
-  width: 350px;
+ width: 298.7px;
+ padding: 2rem;
+
 }

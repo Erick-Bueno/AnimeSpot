@@ -17,9 +17,10 @@
   align-items: center;
   padding-left: 3rem;
   padding-right: 3rem;
+  height: 100px;
 }
 .logo-header {
-  width: 12%;
+  width:150px;
 }
 .search {
   width: 300px;
@@ -103,7 +104,7 @@ main {
 .highlights{
 
     font-size:2rem;
-    padding-left: 4rem;
+   
     text-align: center;
     display: flex;
     justify-content: center;
@@ -194,7 +195,7 @@ main {
    
 }
 .logo-footer{
-    width: 35%;
+    width: 200px;
 
     
 }
@@ -209,8 +210,10 @@ main {
     
 }
 .container-secfotter1{
-    border-right: 2px solid white;
-    width: 400px;
+  padding:50px;
+  border-right: 4px solid white;
+  width: 350px;
+  
     
 }
 .contacts{
@@ -235,7 +238,6 @@ main {
     margin-left: 0.625rem;
 }
 .container-secfotter2{
-    width: 400px;
-    padding-left: 4rem;
-    padding-top: 3rem;
+  padding:50px;
+  width: 350px;
 }

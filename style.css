@@ -180,6 +180,9 @@ main {
     background-color: rgb(55, 155, 208);
     display: flex;
     justify-content: center;
+    box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
    
    
 }

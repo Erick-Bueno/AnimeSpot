@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.logo-header {
+  width: 12%;
+}
+.search {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(49, 47, 47);
+  padding: 5px;
+  color: white;
+  padding-right: 35px;
+}
+.container-input-search {
+  position: relative;
+}
+.lupa {
+  width: 7%;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-right: 15px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.button:hover {
+  text-decoration: underline;
+  color: rgb(164, 164, 164);
+}
+
+.slogan {
+  background-image: url("./images/fundo.jpeg");
+
+  font-family: "Montserrat", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center center;
+
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 600px;
+  border-top: 4px solid rgb(49, 47, 47);
+  border-bottom: 4px solid rgb(49, 47, 47);
+  background-position-y: 80%;
+  position: relative;
+  z-index: 2;
+}
+.filter {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(5, 57, 117, 0.665);
+  height: 100%;
+}
+.tittle-slogan {
+  z-index: 5;
+  text-shadow: 5px 1px 20px #000000;
+}
+main {
+  background-color: #000000;
+  color: white;
+  border-bottom: 4px solid rgb(49, 47, 47);
+}
+.title-section {
+    font-family: "League Spartan", sans-serif;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 0.35rem;
+    font-size: 2rem;
+
+}
+.highlights{
+
+    font-size:2rem;
+    padding-left: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.container-border{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.border{
+    width:1000px;
+    border: none;
+    border-top:2px solid white;
+    border-radius: 2px;
+    margin-top: 1.3rem;
+}
+.cardimg{
+    margin-top: 0.313rem;
+    width: 295px;
+    object-fit: contain;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.card-notices{
+    background-color: rgb(21, 21, 21);
+    width: 300px;
+    transition: 0.2s ease-in-out;
+    margin: 2rem;
+   
+   
+}
+.notice-title{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 0.24rem;
+}
+.date{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 0.24rem;
+    color: rgb(95, 133, 159);
+}
+.description{
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-top: 1rem;
+    padding: 0.24rem;
+    color: rgba(255, 255, 255, 0.493);
+    transition: 0.2s ease-in-out;
+}
+
+.card-notices:hover{
+    transform: scale(110%);
+    cursor: pointer;
+}
+.description:hover{
+    color: rgba(255, 255, 255, 0.127);
+}
+.border2{
+    width:900px;
+    border: none;
+    border-top:2px solid white;
+    border-radius: 2px;
+    margin-top: 1.3rem;
+}
+.footer{
+    background-color: rgb(55, 155, 208);
+    display: flex;
+    justify-content: center;
+   
+   
+}
+.logo-footer{
+    width: 35%;
+
+    
+}
+.container-copy{
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    
+}
+.container-secfotter1{
+    border-right: 2px solid white;
+    width: 400px;
+    
+}
+.contacts{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.container-email{
+    display: flex;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.icon-email{
+    width: 22px;
+
+}
+.email{
+    font-family: "Montserrat", sans-serif; 
+    color: white;
+    margin-left: 0.625rem;
+}
+.container-secfotter2{
+    width: 400px;
+    padding-left: 4rem;
+    padding-top: 3rem;
+}

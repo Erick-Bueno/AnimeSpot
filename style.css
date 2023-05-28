@@ -189,6 +189,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
     -webkit-box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: inset -12px 14px 63px -7px rgba(0,0,0,0.75);
@@ -233,21 +234,18 @@ main {
     color: white;
     margin-left: 0.625rem;
 }
-.container-secfotter1{
+.container-secfotter{
 
-  padding: 30px;
+  width: 300px;
+  transition: 0.2s ease-in-out;
+  margin: 2rem;
+ 
   
     
 }
-.container-secfotter2{
-  padding: 30px;
-  
-
-}
-.borda-fotter{
-  border: none;
-  border-right: 1px solid white;
+.borda-footer{
+  position: absolute;
   height: 100%;
-  padding-left: 61px;
- 
+  background-color: white;
+  width: 1px;
 }

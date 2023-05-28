@@ -78,6 +78,26 @@
   position: relative;
   z-index: 2;
 }
+.sloganManga {
+  background-image: url("./images/fundoManga.jpeg");
+
+  font-family: "Montserrat", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center center;
+
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 600px;
+  border-top: 4px solid rgb(49, 47, 47);
+  border-bottom: 4px solid rgb(49, 47, 47);
+  background-position-y: 80%;
+  position: relative;
+  z-index: 2;
+}
 .filter {
   position: absolute;
   width: 100%;
@@ -248,4 +268,17 @@ main {
   height: 100%;
   background-color: white;
   width: 1px;
+}
+
+.icon-adm{
+  width: 32px;
+  margin-left: 20px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.current-page{
+  text-decoration: underline;
 }

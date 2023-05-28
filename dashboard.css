@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+  }
+  body,html{
+    height: 100%;
+  }
+.menu{
+    background-image: linear-gradient(#427997,#6195b1);
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   
+  }
+  .conteudo-dash{
+    display: flex;
+
+   
+  }
+  .title-dashboard{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+ 
+  
+    
+  }
+  
+  .back{
+    background-color: rgba(255, 255, 255, 0.211);
+    margin-top: 0.5rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    text-decoration: none;
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.5rem;
+    transition: 0.5s;
+  }
+  .nav a:hover{
+   background-color: rgba(45, 44, 44, 0.5); 
+  }
+  .go-home{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    position: relative;
+    margin-left: 2rem;
+    
+  }
+  .home-icon{
+    position: absolute;
+    top: -10px;
+  }
+  .p-goToHome{
+    margin-left: 2.5rem;
+  }
+  .background-table{
+    background-image: linear-gradient(#000000, #111111);
+    width: 100vw;
+    
+  }
+  .table{
+     background-image: linear-gradient(#141414, #111111); 
+    
+   margin: 1.5rem;
+    color: white;
+    padding: 2rem;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    
+    
+  }
+  .title-notices{
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+   
+  }
+  th{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.8rem;
+    
+  }
+  table{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+  }
+td{
+    font-family: 'Manrope', sans-serif;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+table td div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+}
+.container-mani{
+    display: flex;
+    
+}
+.container-mani img{
+    width: 32px;
+    margin-left: 1.5rem;
+
+}
+.manipulation{
+  cursor: pointer;
+}
+.selectedLink{
+  background-color: rgba(45, 44, 44, 0.5); 
+}
+.table2{
+  background-image: linear-gradient(#141414, #111111); 
+    
+  margin: 1.5rem;
+   color: white;
+   padding: 2rem;
+   height: calc(100vh - 50px);
+}
+.card-notices {
+  background-color: rgb(21, 21, 21);
+  width: 300px;
+  transition: 0.2s ease-in-out;
+  margin: 2rem;
+}
+.cardimg {
+  margin-top: 0.313rem;
+  width: 295px;
+  height: 161px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+.notice-title {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: left;
+  padding: 0.24rem;
+}
+.date {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: left;
+  padding: 0.24rem;
+  color: rgb(95, 133, 159);
+}
+.description {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding: 0.24rem;
+  color: rgba(255, 255, 255, 0.493);
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.table2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.title-newNotice{
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  
+  
+ 
+}
+.file{
+  display: none;
+}
+.img-label{
+  border:none;
+  padding: 0.2rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 200;
+  background-color: #5d5d5d;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-weight: bolder;
+  transition: 0.2s;
+  
+}
+.img-label:hover{
+  background-color: #434141;
+}
+.titles-form{
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  
+  
+
+}
+.container-input-form{
+  display: flex;
+  flex-direction: column;
+}
+.inputText{
+  width: 180px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.508);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 200;
+  color: white;
+  outline: none;
+  padding-left: 0.2rem;
+  margin-left: 1rem;
+}
+.select{
+  background-color: #111111;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 200;
+  margin-left: 1rem;
+}
+textarea{
+  background-color: transparent;
+  resize: none;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 200;
+  color: white;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  margin-left: 1rem;
+}
+.container-buttons{
+  margin-left: 1rem;
+ 
+}
+.container-buttons button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.save{
+  background-color: #5d5d5d;
+  border: none;
+  padding: 0.2rem;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.save:hover{
+  background-color: #434141;
+}
+.desca{
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.pre{
+  font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.pre-view{
+  margin-left: 2rem;
+  
+}
+.form{
+  padding-right: 14rem;
+  border-right: 2px solid white;
+  margin-top: 3rem;
+}
+.config{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}

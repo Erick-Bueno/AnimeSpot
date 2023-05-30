@@ -302,7 +302,9 @@ textarea{
   
 }
 .form{
- 
+  padding-right: 14rem;
+  border-right: 2px solid white;
+  margin-top: 3rem;
 }
 .config{
   cursor: pointer;

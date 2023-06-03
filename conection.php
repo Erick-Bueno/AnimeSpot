@@ -1,11 +1,12 @@
 <?php
 
-    $HOST = "localhost";
-    $PASSWORD = "";
+    $HOST = "containers-us-west-19.railway.app";
+    $PASSWORD = "TiGAZY5drDuBKaF2Zbwh";
     $USER = "root";
-    $DATABASE = "animespot";
+    $DATABASE = "railway";
+    $PORT = 6996;
 
-    $con= new mysqli($HOST, $USER, $PASSWORD, $DATABASE);
+    $con= new mysqli($HOST, $USER, $PASSWORD, $DATABASE,$PORT);
 
     if($con -> connect_errno){
         echo"erro";

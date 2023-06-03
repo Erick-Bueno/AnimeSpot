@@ -34,3 +34,4 @@ use Kreait\Firebase\Contract\Storage;
     }
     echo json_encode($response); */
     $con->close();
+?>

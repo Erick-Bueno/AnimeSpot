@@ -21,7 +21,7 @@
           <a class="back" href="./TodasAsNoticias.php">Todas as notícias</a>
           <a class="back" href="./novaNoticia.php">Nova notícia</a>
         </nav>
-        <a href="../../../index.html">
+        <a href="../../../index.php">
           <div class="go-home">
             <img class="home-icon" src="../../../images/home.png" alt="" />
             <p class="p-goToHome">Ir para o site</p>

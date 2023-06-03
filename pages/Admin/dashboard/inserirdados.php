@@ -1,6 +1,6 @@
 <?php
     include("../../../conection.php");
-    require '../../../../vendor/autoload.php';
+    require '../../../vendor/autoload.php';
 
 use Google\Cloud\Storage\StorageClient;
 use Kreait\Firebase\Contract\Storage;

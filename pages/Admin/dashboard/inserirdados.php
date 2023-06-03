@@ -7,7 +7,7 @@
     $tipo_conteudo = $_POST['typeContent'];
     $tipo_noticia = $_POST['typeNotice'];
     $conteudo = $_POST['conteudo'];
-    $acesso_img = "http://localhost/AnimeSpot/imagemNoticias/" . $nome_arquivo;
+    $acesso_img = "animespot-production.up.railway.app/AnimeSpot/imagemNoticias/" . $nome_arquivo;
     $diretorio = "C:/xampp/htdocs/AnimeSpot/imagemNoticias/";
     $caminho = $diretorio . $nome_arquivo;
     $query = "";

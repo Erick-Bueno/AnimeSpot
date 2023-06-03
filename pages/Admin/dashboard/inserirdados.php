@@ -8,7 +8,7 @@
     $tipo_noticia = $_POST['typeNotice'];
     $conteudo = $_POST['conteudo'];
     $acesso_img = "https://animespot-production.up.railway.app/imagemNoticias/" . $nome_arquivo;
-    $diretorio = "https://animespot-production.up.railway.app/imagemNoticias";
+    $diretorio = "https://animespot-production.up.railway.app/imagemNoticias/";
     $caminho = $diretorio . $nome_arquivo;
     $query = "";
     if(move_uploaded_file($arquivo_tmp,$caminho)){

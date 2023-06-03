@@ -19,6 +19,9 @@
   padding-left: 3rem;
   padding-right: 3rem;
   height: 100px;
+  border-bottom: 4px solid rgb(49, 47, 47);
+  
+  
 }
 .logo-header {
   width: 150px;
@@ -36,6 +39,14 @@
 }
 .container-input-search {
   position: relative;
+}
+.LastNotices{
+  font-size: 2rem;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .lupa {
   width: 7%;
@@ -112,7 +123,8 @@
 main {
   background-color: #000000;
   color: white;
-  border-bottom: 4px solid rgb(49, 47, 47);
+  
+ 
 }
 .title-section {
   font-family: "League Spartan", sans-serif;
@@ -184,6 +196,7 @@ main {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  line-height: 1.6
 }
 
 .card-notices:hover {
@@ -210,6 +223,8 @@ main {
   -webkit-box-shadow: inset -12px 14px 63px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset -12px 14px 63px -7px rgba(0, 0, 0, 0.75);
   height: 200px;
+  border-top:  4px solid rgb(49, 47, 47);
+
 }
 .logo-footer {
   width: 200px;
@@ -267,4 +282,17 @@ a {
 
 .current-page {
   text-decoration: underline;
+}
+.Notice-Completed{
+  text-align: center;
+}
+.geral-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+.top-container {
+  flex: 1;
+  background-color: black;
 }

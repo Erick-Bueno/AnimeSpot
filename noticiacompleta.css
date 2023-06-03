@@ -1,0 +1,49 @@
+.Notice-Completed__title{
+    font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 2.3rem;
+  line-height: 3rem;
+  
+}
+.Notice-Completed{
+    background-color: rgb(21, 21, 21);
+    width: 500px;
+    margin: auto;
+    margin-bottom: 0.313rem;
+    padding-top: 2rem;
+    
+  
+   
+    
+}
+
+.Notice-Completed__date{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.24rem;
+    color: rgb(95, 133, 159);
+}
+.Notice-Completed__img{
+    margin-top: 0.313rem;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid rgb(49, 48, 48);
+    border-radius: 2px;
+   
+}
+.Notice-Completed__desc{
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 3rem;
+    text-indent: 1rem;
+    
+    word-break: break-all;
+    
+ 
+}
+.m{
+    padding-top: 1rem;
+}

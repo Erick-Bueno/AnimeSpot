@@ -1,3 +1,6 @@
+<?php
+    include("../../../verificar_autenticacao.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,16 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../../dashboard.css" />
-    <script src="../../../todasAsNoticias.js" defer></script>
-    <script src="../../../NovaNoticia.js" defer></script>
+    <link rel="stylesheet" href="novaNoticia.css">
+    <script src="./todasAsNoticias.js" defer></script>
+   
+    <script src="./atualizarNoticia.js" defer></script>
   </head>
   <body>
     <section class="conteudo-dash">
       <section class="menu">
         <h1 class="title-dashboard">Dashboard</h1>
         <nav class="nav">
-          <a class="back" href="./TodasAsNoticias.html">Todas as notícias</a>
-          <a class="back" href="./novaNoticia.html">Nova notícia</a>
+          <a class="back" href="./TodasAsNoticias.php">Todas as notícias</a>
+          <a class="back" href="./novaNoticia.php">Nova notícia</a>
         </nav>
         <a href="../../../index.html">
           <div class="go-home">
@@ -27,37 +32,37 @@
       <section class="background-table">
         <div class="table2">
           <section class="form">
-            <h1 class="title-newNotice">Nova notícia</h1>
-            <form action="">
+            <h1 class="title-newNotice">Atualizar notícia</h1>
+            <form>
                 <div>
                     <h1 class="titles-form">Imagem</h1>
                     <label class="img-label" for="img">UPLOAD</label>
-                    <input  class="file" id="img" type="file">
+                    <input name="imagemNoticia"  class="file" id="img" type="file">
                 </div>
                 <div class="container-input-form">
                     <label class="titles-form" for="title">Titulo</label>
-                    <input class="input-title inputText" id="title" type="text">
+                    <input name="titulo" class="input-title inputText" id="title" type="text">
                 </div>
                 <div class="container-input-form">
                     <label class="titles-form" for="desc">Descrição</label>
-                    <input class="inputText input-description" id="desc" type="text">
+                    <input name="descricao" class="inputText input-description" id="desc" type="text">
                 </div>
                 <div>
                     <h1 class="titles-form">Categorias</h1>
-                     <select class="select" name="" id="">
-                        <option class="select" value="">Animes</option>
-                        <option value="">Mangás</option>
+                     <select class="select" name="typeContent" id="selectCat">
+                        <option class="select" value="anime">Animes</option>
+                        <option value="manga">Mangás</option>
                      </select>
-                     <select class="select" name="" id="">
-                        <option value="">Destaques</option>
-                        <option value="">Noticia comum</option>
+                     <select class="select" name="typeNotice" id="selectType">
+                        <option value="destaque">Destaques</option>
+                        <option value="comum">Noticia comum</option>
                      </select>
                 </div>
                 <div>
                     <h1 class="titles-form">Conteúdo</h1>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="conteudo" id="content" cols="30" rows="10"></textarea>
                 </div>
-                <div class="container-buttons"><button class="save">Salvar</button> <button class="desca">Descartar</button></div>
+                <div class="container-buttons"><button class="save">Atualizar</button> <button class="desca">Descartar</button></div>
             </form>
           </section>
           <section class="pre-view">

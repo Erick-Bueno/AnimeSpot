@@ -1,6 +1,6 @@
 let paragrafo = document.querySelector(".cop")
 let paragrafo2 = document.querySelector(".cop2")
-
+let container_cards_highlights = document.querySelector(".highlights")
 let date = new Date()
 let yearNow = date.getFullYear()
 
@@ -16,3 +16,6 @@ links.forEach(function(link){
 
 paragrafo.textContent = yearNow
 paragrafo2.textContent = yearNow
+
+
+

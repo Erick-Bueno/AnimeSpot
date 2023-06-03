@@ -19,6 +19,7 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+
    
   }
   .conteudo-dash{
@@ -83,7 +84,7 @@
   .table{
      background-image: linear-gradient(#141414, #111111); 
     
-   margin: 1.5rem;
+    margin: 1.5rem;
     color: white;
     padding: 2rem;
     height: calc(100vh - 50px);
@@ -110,11 +111,14 @@
     border-collapse: collapse;
     display: flex;
     justify-content: center;
+    table-layout: fixed;
+  
   }
 td{
     font-family: 'Manrope', sans-serif;
     padding: 1rem;
     border-bottom: 1px solid white;
+   
 }
 table td div{
     overflow: hidden;
@@ -140,8 +144,8 @@ table td div{
 }
 .table2{
   background-image: linear-gradient(#141414, #111111); 
-    
-  margin: 1.5rem;
+  overflow-y: scroll;
+   margin: 1.5rem;
    color: white;
    padding: 2rem;
    height: calc(100vh - 50px);
@@ -188,11 +192,13 @@ table td div{
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  line-height: 1.6;
 }
 .table2{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
   
 }
 .title-newNotice{
@@ -303,7 +309,7 @@ textarea{
 }
 .form{
   padding-right: 14rem;
-  border-right: 2px solid white;
+  border-right: 2px solid white;;
   margin-top: 3rem;
 }
 .config{

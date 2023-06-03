@@ -21,7 +21,7 @@
             <img class="lupa" src="images/lupa.png" alt="" />
           </div>
           <div>
-            <button class="button"><a href="./index.html">Animes</a></button>
+            <button class="button"><a href="./index.php">Animes</a></button>
             <button class="button"><a href="./pages/Mangas.html">Mangás</a></button>
           </div>
           <div>

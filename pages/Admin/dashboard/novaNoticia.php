@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="novaNoticia.css">
     <script src="./todasAsNoticias.js" defer></script>
     <script src="./NovaNoticia.js" defer></script>
+
   </head>
   <body>
     <section class="conteudo-dash">
@@ -84,5 +85,6 @@
         </div>
       </section>
     </section>
+</script>
   </body>
 </html>

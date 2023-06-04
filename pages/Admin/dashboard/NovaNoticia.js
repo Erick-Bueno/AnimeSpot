@@ -35,7 +35,7 @@ inputDescription.addEventListener("input", function (e) {
   let nomeimg = "teste"
   let storage = firebase.storage()
   let upload = storage.ref().child("images").child(nomeimg).put(img_selected)
-  upload.on("alterou", function(){
+  upload.on("state_changed", function(){
     console.log("ok")
   }, function(error){
     console.log("erro")

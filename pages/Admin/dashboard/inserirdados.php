@@ -4,10 +4,11 @@
     
    
 
-use Google\Cloud\Storage\StorageClient;
-use Kreait\Firebase\Contract\Storage;
+    use Google\Cloud\Storage\StorageClient;
+    use Kreait\Firebase\Contract\Storage;
     use Kreait\Firebase\Factory;
     use Kreait\Firebase\ServiceAccount;
+    use \Firebase\JWT\JWT;
 
    
   

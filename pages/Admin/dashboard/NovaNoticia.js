@@ -31,8 +31,31 @@ inputDescription.addEventListener("input", function (e) {
   
  form.addEventListener("submit", async function (e) {
   e.preventDefault();
+  let img_selected = inputFile.files[0]
+  
+  let nomeimg = uuid + "_" + img_selected.name
+  const firebaseConfig = {
+    apiKey: "AIzaSyDVWdg2eS3We3myqVLfFYV6xN4UAXHrSho",
+    authDomain: "lateral-rider-354218.firebaseapp.com",
+    projectId: "lateral-rider-354218",
+    storageBucket: "lateral-rider-354218.appspot.com",
+    messagingSenderId: "146567212142",
+    appId: "1:146567212142:web:7ecfb9119b3283e87dca7f",
+    measurementId: "G-ZJDLVTSDX0"
+  };
+  if (!firebase.apps.length) {
+    // Configurar o Firebase usando o seu Firebase config
+    firebase.initializeApp(firebaseConfig);
+  }
+  let storage = firebase.storage()
+  let upload = storage.ref().child("images").child(nomeimg).put(img_selected)
+  upload.on("state_changed", function(){
+    console.log("ok")
+  }, function(error){
+    console.log("erro")
+  })
 
-  let formdata = new FormData(this);
+/*   let formdata = new FormData(this);
   let req = await fetch("inserirdados.php", {
     method: "POST",
     body: formdata,
@@ -62,5 +85,5 @@ inputDescription.addEventListener("input", function (e) {
     div_msg.classList.remove("fade-out");
     div_msg.style.display = "none";
     div_msg.classList.remove("animating");
-  }, 2500); 
+  }, 2500); */
 }); 

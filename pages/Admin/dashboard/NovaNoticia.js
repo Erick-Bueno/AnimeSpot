@@ -60,7 +60,7 @@ inputDescription.addEventListener("input", function (e) {
   storage.ref().child("images").child(nomeimg).put(img_selected).then(function(snapshot){
         snapshot.ref.getDownloadURL().then( async function(url){
             console.log(url)
-            let formdata = new FormData(this);
+            let formdata = new FormData(form);
             let req = await fetch(`inserirdados.php?urlimg=${url}`, {
               method: "POST",
               body: formdata,

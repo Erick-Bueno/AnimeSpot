@@ -1,6 +1,6 @@
 <?php
     include("../../../conection.php");
-    require 'C:\Users\erick\Documents\GitHub\AnimeSpot\vendor\autoload.php';
+    require "../../../vendor/autoload.php";
     
    
 

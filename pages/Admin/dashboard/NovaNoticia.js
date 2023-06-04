@@ -10,7 +10,13 @@ let pmsg = document.querySelector(".msg_noticia");
 let msgContainer = document.querySelector(".msg_sucesss");
 
 let date = new Date();
-
+function generateUUID() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0,
+        v = c === 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
 let time = date.getTime();
 let dateNow = new Date(time);
 paragraphDate.textContent = dateNow.toLocaleDateString();
@@ -31,8 +37,8 @@ inputDescription.addEventListener("input", function (e) {
   
  form.addEventListener("submit", async function (e) {
   e.preventDefault();
+  let uuid = generateUUID()
   let img_selected = inputFile.files[0]
-  
   let nomeimg = uuid + "_" + img_selected.name
   const firebaseConfig = {
     apiKey: "AIzaSyDVWdg2eS3We3myqVLfFYV6xN4UAXHrSho",

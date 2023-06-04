@@ -61,6 +61,7 @@ inputDescription.addEventListener("input", function (e) {
         snapshot.ref.getDownloadURL().then( async function(url){
             let dowUrl = url
             let formdata = new FormData(form);
+            console.log(dowUrl)
             let req = await fetch(`inserirdados.php?urlimg=${dowUrl}`, {
               method: "POST",
               body: formdata,

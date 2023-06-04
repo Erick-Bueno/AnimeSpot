@@ -1,6 +1,8 @@
 <?php
     include("../../../conection.php");
-    require __DIR__ . '../vendor/autoload.php';
+    require 'C:\Users\erick\Documents\GitHub\AnimeSpot\vendor\autoload.php';
+    
+   
 
 use Google\Cloud\Storage\StorageClient;
 use Kreait\Firebase\Contract\Storage;

@@ -1,5 +1,9 @@
 <?php
+
+use Google\Cloud\Storage\StorageClient;
+
     include("../../../conection.php");
+    require "../../../vendor/autoload.php";
 
    
   
@@ -12,8 +16,12 @@
     $tipo_noticia = $_POST['typeNotice'];
     $conteudo = $_POST['conteudo'];
 
+    $storage = new StorageClient(['projectId' => '<my_project_id> ']);
+    $bucket = $storage->bucket('images');
+    $bucket->upload($_FILES['imageToUpload']['tmp_name']);
 
-    $query = "";
+
+  /*   $query = "";
    
     $query = "INSERT INTO notices (title, img_url, simpleDescription, typeContent, typeNotice, content, created_at) values ('$titulo_noticia','$acesso_img','$descricao_noticia','$tipo_conteudo','$tipo_noticia', '$conteudo', NOW() )";
        
@@ -23,5 +31,5 @@
         $response['message'] = "Noticia Adicionada";
     }
     echo json_encode($response); 
-    $con->close();
+    $con->close(); */
 ?>

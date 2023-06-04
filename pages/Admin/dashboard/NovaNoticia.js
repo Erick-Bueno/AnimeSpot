@@ -50,6 +50,7 @@ inputDescription.addEventListener("input", function (e) {
   }, function(error){
     console.log("erro")
   })
+  firebase.app().delete()
 /*   let formdata = new FormData(this);
   let req = await fetch("inserirdados.php", {
     method: "POST",

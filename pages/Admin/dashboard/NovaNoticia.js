@@ -58,15 +58,9 @@ inputDescription.addEventListener("input", function (e) {
   }
   let storage = firebase.storage()
   let upload = storage.ref().child("images").child(nomeimg).put(img_selected)
-  upload.on("state_changed", function(){
-    upload.snapshot.ref.getDownloadURL().then(function(url_img){
-        console.log(url_img)
-    })
-  }, function(error){
-    console.log("erro")
-  })
+ 
 }
-form.reset();
+
 
   /*  let formdata = new FormData(this);
   let req = await fetch(`inserirdados.php?urlimg=${}`, {

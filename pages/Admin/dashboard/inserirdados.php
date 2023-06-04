@@ -14,7 +14,7 @@ use Google\Cloud\Storage\StorageClient;
     $tipo_conteudo = $_POST['typeContent'];
     $tipo_noticia = $_POST['typeNotice'];
     $conteudo = $_POST['conteudo'];
-
+    $acesso_img = $_GET['urlimg'];
     
 
     $query = "";

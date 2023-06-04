@@ -6,7 +6,7 @@ use Google\Cloud\Storage\StorageClient;
     require "../../../vendor/autoload.php";
     use Firebase\JWT\JWT;
    
-  
+    global $firebaseConfig, $storageBucket;
     
     $nome_arquivo =   uniqid()."_".$_FILES['imagemNoticia']['name'] ;
     $arquivo_tmp = $_FILES['imagemNoticia']['tmp_name'];

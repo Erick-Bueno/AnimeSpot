@@ -104,7 +104,8 @@ form.addEventListener("submit", async function (e) {
       return
   }
   let formdata = new FormData(form);
-  let req = await fetch(`update.php?id=${id_notice}`, {
+  let imgurl = false
+  let req = await fetch(`update.php?id=${id_notice}&imgurl=${imgurl}`, {
     method: "POST",
     body: formdata,
   });

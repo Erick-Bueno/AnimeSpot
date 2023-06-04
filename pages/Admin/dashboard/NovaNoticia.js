@@ -59,7 +59,7 @@ inputDescription.addEventListener("input", function (e) {
   let storage = firebase.storage()
   storage.ref().child("images").child(nomeimg).put(img_selected).then(function(snapshot){
         snapshot.ref.getDownloadURL().then( async function(url){
-            let dowUrl = url
+            let dowUrl = encodeURIComponent(url)
             let formdata = new FormData(form);
             console.log(dowUrl)
             let req = await fetch(`inserirdados.php?urlimg=${dowUrl}`, {

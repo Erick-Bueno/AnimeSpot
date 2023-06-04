@@ -57,7 +57,7 @@ inputDescription.addEventListener("input", function (e) {
     firebase.initializeApp(firebaseConfig);
   }
   let storage = firebase.storage()
-  let upload = storage.ref().child("images").child(nomeimg).put(img_selected)
+  let upload = await storage.ref().child("images").child(nomeimg).put(img_selected)
   let url = await upload.snapshot.ref.getDownloadURL()
   console.log(url)
 }

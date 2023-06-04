@@ -42,7 +42,10 @@ inputDescription.addEventListener("input", function (e) {
     appId: "1:146567212142:web:7ecfb9119b3283e87dca7f",
     measurementId: "G-ZJDLVTSDX0"
   };
-  firebase.initializeApp(firebaseConfig);
+  if (!firebase.apps.length) {
+    // Configurar o Firebase usando o seu Firebase config
+    firebase.initializeApp(firebaseConfig);
+  }
   let storage = firebase.storage()
   let upload = storage.ref().child("images").child(nomeimg).put(img_selected)
   upload.on("state_changed", function(){
@@ -50,7 +53,7 @@ inputDescription.addEventListener("input", function (e) {
   }, function(error){
     console.log("erro")
   })
-  firebase.app().delete()
+
 /*   let formdata = new FormData(this);
   let req = await fetch("inserirdados.php", {
     method: "POST",

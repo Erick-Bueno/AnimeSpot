@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="novaNoticia.css">
     <script src="./todasAsNoticias.js" defer></script>
     <script src="./NovaNoticia.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
 
   </head>
   <body>

@@ -31,9 +31,6 @@ inputDescription.addEventListener("input", function (e) {
   
  form.addEventListener("submit", async function (e) {
   e.preventDefault();
-  let img_selected = inputFile.files[0]
-  let uuid = uuid.generate();
-  let nomeimg = uuid + "_" + img_selected.name
 
   let formdata = new FormData(this);
   let req = await fetch("inserirdados.php", {

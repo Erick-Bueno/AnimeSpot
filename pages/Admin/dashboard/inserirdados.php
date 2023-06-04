@@ -4,7 +4,7 @@ use Google\Cloud\Storage\StorageClient;
 
     include("../../../conection.php");
     require "../../../vendor/autoload.php";
-
+    use Firebase\JWT\JWT;
    
   
     
@@ -16,15 +16,38 @@ use Google\Cloud\Storage\StorageClient;
     $tipo_noticia = $_POST['typeNotice'];
     $conteudo = $_POST['conteudo'];
 
-    $storage = new StorageClient(['projectId' => 'lateral-rider-354218','keyFilePath' =>    'lateral-rider-354218-firebase-adminsdk-z24hj-45ea6eaa9b.json']);
-    $bucket = $storage->bucket('lateral-rider-354218');
-    $bucket->upload(
-        file_get_contents($arquivo_tmp),
-        [
-            'name' => $nome_arquivo
-        ]
-    );
-    $bucket->upload($nome_arquivo);
+    $projectId = $firebaseConfig['project_id'];
+    $clientEmail = $firebaseConfig['client_email'];
+    $privateKey = $firebaseConfig['private_key'];
+
+    // Cria um token JWT
+    $jwtPayload = [
+        'iss' => "erick",
+        'sub' => "erick",
+        'aud' => 'https://identitytoolkit.googleapis.com/google.identity.identitytoolkit.v1.IdentityToolkit',
+        'iat' => time(),
+        'exp' => time() + 3600,
+        'uid' => 'firebase-admin',
+    ];
+    $jwt = JWT::encode($jwtPayload, $privateKey, 'RS256');
+
+    // Configura o cliente do Firebase Storage
+    $storage = new StorageClient([
+        'projectId' => $projectId,
+        'authCache' => false,
+        'authHttpHandler' => function ($httpHandler) use ($jwt) {
+            return function ($request, $options = []) use ($httpHandler, $jwt) {
+                $request = $request->withHeader('Authorization', 'Bearer ' . $jwt);
+                return $httpHandler($request, $options);
+            };
+        },
+    ]);
+
+    // Realiza o upload do arquivo para o Firebase Storage
+    $bucket = $storage->bucket($storageBucket);
+    $uploadedFile = $bucket->upload(fopen($arquivo_tmp, 'r'), [
+        'name' => $nome_arquivo
+    ]);
 
 
   /*   $query = "";

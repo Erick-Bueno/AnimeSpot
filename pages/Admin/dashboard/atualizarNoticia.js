@@ -76,7 +76,7 @@ form.addEventListener("submit", async function(e){
             snapshot.ref.getDownloadURL().then( async function(url){
                 let dowUrl = encodeURIComponent(url)
                 let formdata = new FormData(form);
-                let req = await fetch(`update.php?imgurl=${dowUrl}`,{
+                let req = await fetch(`update.php?id=${id_notice}&imgurl=${dowUrl}`,{
                     method:"POST",
                     body:formdata
                 })

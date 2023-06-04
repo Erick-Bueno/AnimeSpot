@@ -11,7 +11,6 @@
      $query = "";
      if($imgurl){
         $query = "update notices set title = '$titulo_noticia', img_url = '$imgurl', simpleDescription = '$descricao_noticia', typeContent = '$tipo_conteudo', typeNotice = '$tipo_noticia', content = '$conteudo' where id = $id_notice ";
-        move_uploaded_file($arquivo_tmp,$caminho);
         $con->query($query);
         $con->close();
         $response_sucess = array("msg" => "Noticia atualizada com sucesso");

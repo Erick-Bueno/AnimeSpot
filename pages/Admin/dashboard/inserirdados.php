@@ -8,7 +8,7 @@
     use Kreait\Firebase\Contract\Storage;
     use Kreait\Firebase\Factory;
     use Kreait\Firebase\ServiceAccount;
-    use \Firebase\JWT\JWT;
+    use Firebase\JWT\JWT;
 
    
   

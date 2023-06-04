@@ -86,7 +86,7 @@ form.addEventListener("submit", async function(e){
                 let p_msg_content = document.createElement("p")
                 p_msg_content.classList.add("msg_noticia")
                 div_msg.appendChild(p_msg_content)
-                
+                console.log("vvvvvv")
                 document.body.appendChild(div_msg)
                 div_msg.style.display = 'block'
                 p_msg_content.textContent = res.msg

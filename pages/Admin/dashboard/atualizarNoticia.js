@@ -101,6 +101,7 @@ form.addEventListener("submit", async function (e) {
           }, 2500);
         });
       });
+      return
   }
   let formdata = new FormData(form);
   let req = await fetch(`update.php?id=${id_notice}`, {

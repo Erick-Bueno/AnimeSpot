@@ -66,6 +66,7 @@ inputDescription.addEventListener("input", function (e) {
     console.log("erro")
   })
 }
+form.reset();
 
   /*  let formdata = new FormData(this);
   let req = await fetch(`inserirdados.php?urlimg=${}`, {

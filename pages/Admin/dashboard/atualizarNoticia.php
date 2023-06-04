@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../../../dashboard.css" />
     <link rel="stylesheet" href="novaNoticia.css">
     <script src="./todasAsNoticias.js" defer></script>
-   
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
     <script src="./atualizarNoticia.js" defer></script>
   </head>
   <body>

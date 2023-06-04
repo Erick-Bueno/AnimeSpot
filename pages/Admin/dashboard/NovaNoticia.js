@@ -32,7 +32,8 @@ inputDescription.addEventListener("input", function (e) {
  form.addEventListener("submit", async function (e) {
   e.preventDefault();
   let img_selected = inputFile.files[0]
-  let nomeimg = img_selected.name
+  let uuid = uuidv4()
+  let nomeimg = uuid + "_" + img_selected.name
   const firebaseConfig = {
     apiKey: "AIzaSyDVWdg2eS3We3myqVLfFYV6xN4UAXHrSho",
     authDomain: "lateral-rider-354218.firebaseapp.com",

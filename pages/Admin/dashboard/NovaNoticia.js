@@ -59,7 +59,7 @@ inputDescription.addEventListener("input", function (e) {
   let storage = firebase.storage()
   let upload = storage.ref().child("images").child(nomeimg).put(img_selected)
   upload.on("state_changed", function(){
-    let url = upload.snapshot.ref.getDownloadURL().then(function(url_img){
+    upload.snapshot.ref.getDownloadURL().then(function(url_img){
         console.log(url)
     })
   }, function(error){

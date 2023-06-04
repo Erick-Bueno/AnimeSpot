@@ -37,6 +37,9 @@ inputDescription.addEventListener("input", function (e) {
   
  form.addEventListener("submit", async function (e) {
   e.preventDefault();
+  if(inputFile.files[0]){
+
+  
   let uuid = generateUUID()
   let img_selected = inputFile.files[0]
   let nomeimg = uuid + "_" + img_selected.name
@@ -56,13 +59,16 @@ inputDescription.addEventListener("input", function (e) {
   let storage = firebase.storage()
   let upload = storage.ref().child("images").child(nomeimg).put(img_selected)
   upload.on("state_changed", function(){
-    console.log("ok")
+    let url = upload.snapshot.ref.getDownloadURL().then(function(url_img){
+        console.log(url)
+    })
   }, function(error){
     console.log("erro")
   })
+}
 
-/*   let formdata = new FormData(this);
-  let req = await fetch("inserirdados.php", {
+  /*  let formdata = new FormData(this);
+  let req = await fetch(`inserirdados.php?urlimg=${}`, {
     method: "POST",
     body: formdata,
   });
@@ -91,5 +97,5 @@ inputDescription.addEventListener("input", function (e) {
     div_msg.classList.remove("fade-out");
     div_msg.style.display = "none";
     div_msg.classList.remove("animating");
-  }, 2500); */
+  }, 2500);  */
 }); 

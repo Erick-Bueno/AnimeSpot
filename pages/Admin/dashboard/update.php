@@ -8,7 +8,7 @@
      $id_notice = $_GET['id'];
      $imgurl = $_GET['imgurl'];
      $query = "";
-     if($imgurl !=false){
+     if($imgurl !== false){
         $query = "update notices set title = '$titulo_noticia', img_url = '$imgurl', simpleDescription = '$descricao_noticia', typeContent = '$tipo_conteudo', typeNotice = '$tipo_noticia', content = '$conteudo' where id = $id_notice ";
         $con->query($query);
         $con->close();

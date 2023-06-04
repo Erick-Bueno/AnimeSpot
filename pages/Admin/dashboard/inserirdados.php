@@ -16,9 +16,15 @@ use Google\Cloud\Storage\StorageClient;
     $tipo_noticia = $_POST['typeNotice'];
     $conteudo = $_POST['conteudo'];
 
-    $storage = new StorageClient(['projectId' => '<my_project_id> ']);
-    $bucket = $storage->bucket('images');
-    $bucket->upload($_FILES['imageToUpload']['tmp_name']);
+    $storage = new StorageClient(['projectId' => 'lateral-rider-354218']);
+    $bucket = $storage->bucket('lateral-rider-354218');
+    $bucket->upload(
+        file_get_contents($arquivo_tmp),
+        [
+            'name' => $nome_arquivo
+        ]
+    );
+    $bucket->upload($nome_arquivo);
 
 
   /*   $query = "";

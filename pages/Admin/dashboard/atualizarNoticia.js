@@ -104,13 +104,13 @@ form.addEventListener("submit", async function (e) {
       return
   }
   let formdata = new FormData(form);
-  let imgurl = false
+  let imgurl = "false"
   let req = await fetch(`update.php?id=${id_notice}&imgurl=${imgurl}`, {
     method: "POST",
     body: formdata,
   });
   let res = await req.json();
-  console.log(res);
+
   let div_msg = document.createElement("div");
   div_msg.classList.add("msg_sucesss");
   let p_msg_content = document.createElement("p");

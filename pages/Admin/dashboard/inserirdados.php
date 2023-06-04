@@ -18,7 +18,7 @@ use Kreait\Firebase\Contract\Storage;
     $tipo_noticia = $_POST['typeNotice'];
     $conteudo = $_POST['conteudo'];
 
-    $storage = new StorageClient(['projectId' => 'lateral-rider-354218', 'keyFilePath' => 'C:\lateral-rider-354218-firebase-adminsdk-z24hj-45ea6eaa9b.json']);
+    $storage = new StorageClient(['projectId' => 'lateral-rider-354218', 'keyFilePath' => 'lateral-rider-354218-firebase-adminsdk-z24hj-45ea6eaa9b.json']);
     $bucket = $storage -> bucket("/");
     $bucket -> upload(file_get_contents($arquivo_tmp),
     [

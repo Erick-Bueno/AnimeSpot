@@ -109,12 +109,12 @@ form.addEventListener("submit", async function (e) {
     body: formdata,
   });
   let res = await req.json();
+  console.log(res);
   let div_msg = document.createElement("div");
   div_msg.classList.add("msg_sucesss");
   let p_msg_content = document.createElement("p");
   p_msg_content.classList.add("msg_noticia");
   div_msg.appendChild(p_msg_content);
-
   document.body.appendChild(div_msg);
   div_msg.style.display = "block";
   p_msg_content.textContent = res.msg;

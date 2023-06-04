@@ -54,7 +54,7 @@ inputFile.addEventListener("change", function(e){
 form.addEventListener("submit", async function(e){
     e.preventDefault()
     if(inputFile.files.length > 0){
-        console.log("aaa")
+     
         let uuid = generateUUID()
         let img_selected = inputFile.files[0]
         let nomeimg = uuid + "_" + img_selected.name
@@ -76,7 +76,7 @@ form.addEventListener("submit", async function(e){
             snapshot.ref.getDownloadURL().then( async function(url){
                 let dowUrl = encodeURIComponent(url)
                 let formdata = new FormData(form);
-                let req = await fetch(`update.php?id=${id_notice}&?imgurl=${dowUrl}`,{
+                let req = await fetch(`update.php?imgurl=${dowUrl}`,{
                     method:"POST",
                     body:formdata
                 })

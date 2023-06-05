@@ -41,7 +41,7 @@
           </section>
           <section>
             <article class="container-border">
-              <h1 class="title-section">Últimas Nóticias</h1>
+              <h1 class="title-section">Últimas Noticias</h1>
               <div class="border2"></div>
             </article>
           </section>

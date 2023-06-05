@@ -87,7 +87,7 @@
     margin: 1.5rem;
     color: white;
     padding: 2rem;
-    min-height: 100vh;
+    height: calc(100vh - 50px);
     overflow-y: scroll;
     
     
@@ -148,7 +148,7 @@ table td div{
    margin: 1.5rem;
    color: white;
    padding: 2rem;
-   height: calc(100vh - 50px);
+   min-width: 100vh 
 }
 .card-notices {
   background-color: rgb(21, 21, 21);

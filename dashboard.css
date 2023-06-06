@@ -193,6 +193,7 @@ table td div{
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   line-height: 1.6;
+  word-wrap: break-word;
 }
 .table2{
   display: flex;

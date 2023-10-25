@@ -45,6 +45,9 @@ Este projeto é de código aberto e segue a Licença MIT. Consulte o arquivo [LI
 
 ## Contato
 
-Se você tiver alguma dúvida ou precisar de assistência, sinta-se à vontade para entrar em contato conosco através do email [seu-email@example.com].
+Se você tiver alguma dúvida ou precisar de assistência, sinta-se à vontade para entrar em contato conosco através do email erickjb93@gmail.com.
 
 Agradecemos por verificar nosso projeto de site de notícias de animes e mangás!
+
+<iframe width="560" height="315" src="
+https://youtu.be/dd6O0qfQb8w" frameborder="0" allowfullscreen></iframe>

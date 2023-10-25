@@ -1,5 +1,6 @@
 # AnimeSpot
 Você pode encontrar a demonstração do projeto aqui: https://erick-bueno.github.io/Portfolio/
+
 Este é um projeto de um site de notícias dedicado a animes e mangás. O site inclui um dashboard de administração para criar, editar e excluir notícias. O armazenamento de imagens é gerenciado pelo Firebase Storage. O projeto foi desenvolvido como parte de um trabalho acadêmico usando PHP, XAMPP, HTML, CSS e MySQL.
 
 ## Funcionalidades
